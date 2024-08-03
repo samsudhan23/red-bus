@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: white;
+    color: black;
+    padding-top: 10px;
+    min-height: 70px;
+    /* border-bottom: #e8491d 3px solid; */
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header .logo {
+    float: left;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.form {
+    background: white;
+    border-top-left-radius: 1.5rem;
+    /* 8px */
+    border-bottom-left-radius: 1.5rem;
+    /* 8px */
+    padding: 17px;
+    /* padding-left: 10px; */
+    display: inline-block;
+
+}
+
+.banner {
+    /* background: #e8491d; */
+    background-image: url("./images/Homepage-header-2000.webp");
+    height: 600px;
+    color: #fff;
+    /* padding: 60px 0; */
+    text-align: center;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.banner form input,
+.banner form button {
+    padding: 10px;
+    /* margin: 5px; */
+    border: none;
+    font-size: 16px;
+    /* border-radius: 32px; */
+    border-top-right-radius: 1.5rem;
+    /* 8px */
+    border-bottom-right-radius: 1.5rem;
+    /* 8px */
+    outline: none;
+}
+
+.banner form button {
+    background: rgb(216, 78, 85);
+    color: #fff;
+    cursor: pointer;
+    height: 74px;
+    margin-left: -3px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.features {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.feature {
+    margin: 20px;
+    display: inline-block;
+    width: 30%;
+    background: linear-gradient(71.04deg, #890f0f -6.92%, #5e5e5e 109.43%);
+    border-radius: 13px;
+    padding: 12px;
+    color: white;
+}
+
+/* footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+} */
+.mob {
+    display: none;
+}
+
+@media (max-width: 962px) {
+    .banner {
+        display: none;
+    }
+
+    .mob {
+        display: block;
+    }
+
+    .mob-form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        border-radius: 10px;
+    }
+
+    .banner form input,
+    .banner form button {
+        border-radius: 15px;
+        height: 53px;
+    }
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        float: none;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .feature {
+        width: 100%;
+    }
+}
+
+/* CAROUSEL */
+
+.carousel {
+    padding: 0 20px;
+    background: #f9f9f9;
+    text-align: center;
+    margin-top: -3.5rem;
+    z-index: 1;
+}
+
+.margins {
+    /* margin-left: 20%; 
+    margin-right: 20%; */
+    max-width: 1267px;
+}
+
+.carousel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.block {
+    display: none;
+}
+
+.none {
+    display: block;
+}
+
+@media (max-width:768px) {
+    .block {
+        display: block;
+    }
+
+    .none {
+        display: none;
+    }
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.carousel-inner::-webkit-scrollbar {
+    display: none;
+
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.carousel-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.carousel-item p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.carousel-item .offer-code {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.carousel-item.blue {
+    background: linear-gradient(71.04deg, rgb(12, 57, 139) -6.92%, rgb(62, 118, 216) 109.43%);
+}
+
+.carousel-item.green {
+    background: linear-gradient(71.04deg, rgb(39, 57, 101) -6.92%, rgb(80, 210, 149) 109.43%);
+}
+
+.carousel-item.red {
+    background: linear-gradient(71.04deg, rgb(206, 119, 0) -6.92%, rgb(255, 194, 111) 109.43%);
+}
+
+.carousel-item.dark-green {
+    background: linear-gradient(71.04deg, rgb(134, 0, 62) -6.92%, rgb(210, 81, 141) 109.43%);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 10;
+    width: 50px;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.view-all {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #007bff;
+    text-decoration: none;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.view-all:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-inner {
+        display: block;
+    }
+
+    .carousel-item {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+.para {
+    background-color: rgba(255, 255, 255, 0.2);
+    ;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.flexd {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    /* padding: 90px 20px; */
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2 1 600px;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #777;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
+
+.app-promotion {
+    display: flex;
+    padding: 20px;
+    /* height: 50vh; */
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    /* background-color: #f9a6a1; */
+    background-image: url(./images/appInstallbg.svg);
+    border-radius: 20px;
+    align-items: center;
+    background-size: cover;
+    background-position: right center;
+}
+
+.tick {}
+
+.features {
+    background-color: white;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+}
+
+.features,
+.download,
+.image-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.scan {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.features h2 {
+    color: black;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    text-align: start;
+}
+
+.features ul li {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.features ul li span {
+    background: rgb(61, 155, 61);
+    border-radius: 50%;
+    color: white;
+    padding: 4px 6px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    margin-top: 20px;
+}
+
+.ratings div {
+    text-align: center;
+}
+
+.ratings p {
+    margin: 0;
+}
+
+.download {
+    text-align: center;
+    color: #fff;
+}
+
+.download p {
+    margin: 10px 0;
+}
+
+.qr-code {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+}
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.store-buttons img {
+    margin: 0 10px;
+    width: 130px;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .app-promotion {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        /* height: 100vh; */
+        border-radius: 79px;
+    }
+
+    .features,
+    .download,
+    .image-section {
+        margin: 10px 0;
+    }
+
+    .store-buttons img {
+        width: 120px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .features ul li {
+        font-size: 14px;
+    }
+
+    .ratings {
+        flex-direction: column;
+    }
+
+    .ratings div {
+        margin: 10px 0;
+    }
+
+    .store-buttons img {
+        width: 100px;
+    }
+
+    .qr-code {
+        width: 80px;
+        height: 80px;
+    }
+
+    .app-promotion {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedBus Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img style="    width: 5rem;
+    height: 3rem;" src="./images/rdc-redbus-logo.webp" alt="">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Book Ticket</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <h2>Book Bus Tickets Online</h2>
+            <form>
+                <div class="form">
+                    <input type="text" placeholder="From" required>
+                    <input type="text" placeholder="To" required>
+                    <input type="date" required>
+                </div>
+
+                <button type="submit">Search Buses</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="banner mob">
+        <div class="container">
+            <h2>Book Bus Tickets Online</h2>
+            <form class="mob-form">
+                <input type="text" placeholder="From" required>
+                <input type="text" placeholder="To" required>
+                <input type="date" required>
+                <button type="submit">Search Buses</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- <section class="carousel">
+        <div class="carousel-container">
+            <h2>Trending Offers</h2>
+            <div class="carousel-wrapper">
+                <button class="arrow left-arrow" id="left-arrow">&#10094;</button>
+                <div class="carousel-inner" id="carousel-inner">
+                    <div class="carousel-item blue">
+                        <p class="para">Bus</p>
+                        <div class="flexd">
+                            <img src="./images/tile-80X80.png" alt="" style="border-radius: 50%;">
+                            <div>
+                                <h3>Save up to Rs 250 on bus tickets</h3>
+                                <p>Valid till 31 Aug</p>
+                            </div>
+                        </div>
+                        <div class="offer-code">FIRST</div>
+                    </div>
+                    <div class="carousel-item green">
+                        <p class="para">Bus</p>
+                        <div class="flexd">
+                            <img src="./images/BUS300.png" alt="" style="border-radius: 50%;">
+                            <div>
+                                <h3>Save up to Rs 300 on Karnataka, Tamil</h3>
+                                <p>Valid till 31 Aug</p>
+                            </div>
+                        </div>
+                        <div class="offer-code">CASH300</div>
+                    </div>
+                    <div class="carousel-item red">
+                        <p class="para">Bus</p>
+                        <div class="flexd">
+                            <img src="./images/SUPERHIT.png" alt="" style="border-radius: 50%;">
+                            <div>
+                                <h3>Save up to Rs 300 on AP, TS routes</h3>
+                                <p>Valid till 31 Aug</p>
+                            </div>
+                        </div>
+                        <div class="offer-code">SUPERHIT</div>
+                    </div>
+                    <div class="carousel-item dark-green">
+                        <p class="para">Bus</p>
+                        <div class="flexd">
+                            <img src="./images/Intrcity.png" alt="" style="border-radius: 50%;">
+                            <div>
+                                <h3>Save up to Rs 500 on ICICI Bank</h3>
+                                <p>Valid till 31 Aug</p>
+                            </div>
+                        </div>
+                        <div class="offer-code">ICICI500</div>
+                    </div>
+                </div>
+                <button class="arrow right-arrow" id="right-arrow">&#10095;</button>
+            </div>
+            <a href="#" class="view-all">View All</a>
+        </div>
+    </section> -->
+
+    <div class="none" style="text-align: center;">
+        <h2>Trending Offers</h2>
+
+        <marquee class="margins">
+            <div class="carousel-wrapper">
+                <!-- <button class="arrow left-arrow" id="left-arrow">&#10094;</button> -->
+                <div class="carousel-inner" id="carousel-inner">
+                    <div class="carousel-item blue">
+                        <p class="para">Bus</p>
+                        <div class="flexd" style="column-gap: 12px;">
+                            <img src="./images/tile-80X80.png" alt="" style="border-radius: 50%;">
+                            <div>
+                                <h3>Save up to Rs 250 <br> on bus tickets</h3>
+                                <p>Valid till 31 Aug</p>
+                            </div>
+                        </div>
+                        <div class="offer-code">FIRST</div>
+                    </div>
+                    <div class="carousel-item green">
+                        <p class="para">Bus</p>
+                        <div class="flexd">
+                            <img src="./images/BUS300.png" alt="" style="border-radius: 50%;">
+                            <div>
+                                <h3>Save up to Rs 300 <br> on Karnataka, Tamil</h3>
+                                <p>Valid till 31 Aug</p>
+                            </div>
+                        </div>
+                        <div class="offer-code">CASH300</div>
+                    </div>
+                    <div class="carousel-item red">
+                        <p class="para">Bus</p>
+                        <div class="flexd">
+                            <img src="./images/SUPERHIT.png" alt="" style="border-radius: 50%;">
+                            <div>
+                                <h3>Save up to Rs 300 <br> on AP, TS routes</h3>
+                                <p>Valid till 31 Aug</p>
+                            </div>
+                        </div>
+                        <div class="offer-code">SUPERHIT</div>
+                    </div>
+                    <div class="carousel-item dark-green">
+                        <p class="para">Bus</p>
+                        <div class="flexd">
+                            <img src="./images/Intrcity.png" alt="" style="border-radius: 50%;">
+                            <div>
+                                <h3>Save up to Rs 500 <br> on ICICI Bank</h3>
+                                <p>Valid till 31 Aug</p>
+                            </div>
+                        </div>
+                        <div class="offer-code">ICICI500</div>
+                    </div>
+                </div>
+                <!-- <button class="arrow right-arrow" id="right-arrow">&#10095;</button> -->
+            </div>
+        </marquee>
+        <div>
+            <a href="#" class="view-all">View All</a>
+
+        </div>
+    </div>
+
+    <div class="block" style="text-align: center;">
+        <h2>Trending Offers</h2>
+        <div class="carousel-wrapper">
+            <div class="carousel-inner" id="carousel-inner">
+                <div class="carousel-item blue">
+                    <p class="para">Bus</p>
+                    <div class="flexd" style="column-gap: 12px;">
+                        <img src="./images/tile-80X80.png" alt="" style="border-radius: 50%;">
+                        <div>
+                            <h3>Save up to Rs 250 <br> on bus tickets</h3>
+                            <p>Valid till 31 Aug</p>
+                        </div>
+                    </div>
+                    <div class="offer-code">FIRST</div>
+                </div>
+                <div class="carousel-item green">
+                    <p class="para">Bus</p>
+                    <div class="flexd">
+                        <img src="./images/BUS300.png" alt="" style="border-radius: 50%;">
+                        <div>
+                            <h3>Save up to Rs 300 <br> on Karnataka, Tamil</h3>
+                            <p>Valid till 31 Aug</p>
+                        </div>
+                    </div>
+                    <div class="offer-code">CASH300</div>
+                </div>
+                <div class="carousel-item red">
+                    <p class="para">Bus</p>
+                    <div class="flexd">
+                        <img src="./images/SUPERHIT.png" alt="" style="border-radius: 50%;">
+                        <div>
+                            <h3>Save up to Rs 300 <br> on AP, TS routes</h3>
+                            <p>Valid till 31 Aug</p>
+                        </div>
+                    </div>
+                    <div class="offer-code">SUPERHIT</div>
+                </div>
+                <div class="carousel-item dark-green">
+                    <p class="para">Bus</p>
+                    <div class="flexd">
+                        <img src="./images/Intrcity.png" alt="" style="border-radius: 50%;">
+                        <div>
+                            <h3>Save up to Rs 500 <br> on ICICI Bank</h3>
+                            <p>Valid till 31 Aug</p>
+                        </div>
+                    </div>
+                    <div class="offer-code">ICICI500</div>
+                </div>
+            </div>
+            <!-- <button class="arrow right-arrow" id="right-arrow">&#10095;</button> -->
+        </div>
+        <div>
+            <a href="#" class="view-all">View All</a>
+        </div>
+    </div>
+
+    <!-- <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                    <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                    <div class="carousel-item blue">
+                        <p class="para">Bus</p>
+                        <div class="flexd">
+                            <img src="./images/tile-80X80.png" alt="" style="border-radius: 50%;">
+                            <div>
+                                <h3>Save up to Rs 250 on bus tickets</h3>
+                                <p>Valid till 31 Aug</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                    
+                    <div class="carousel-item blue">
+                        <p class="para">Bus</p>
+                        <div class="flexd">
+                            <img src="./images/Intrcity.png" alt="" style="border-radius: 50%;">
+                            <div>
+                                <h3>Save up to Rs 250 on bus tickets</h3>
+                                <p>Valid till 31 Aug</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                    <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+                    <div class="carousel-item red">
+                        <p class="para">Bus</p>
+                        <div class="flexd">
+                            <img src="./images/SUPERHIT.png" alt="" style="border-radius: 50%;">
+                            <div>
+                                <h3>Save up to Rs 300 on AP, TS routes</h3>
+                                <p>Valid till 31 Aug</p>
+                            </div>
+                        </div>
+                        <div class="offer-code">SUPERHIT</div>
+                    </div>
+                </div>
+                
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                    <div class="carousel-item dark-green">
+                        <p class="para">Bus</p>
+                        <div class="flexd">
+                            <img src="./images/Intrcity.png" alt="" style="border-radius: 50%;">
+                            <div>
+                                <h3>Save up to Rs 500 on ICICI Bank</h3>
+                                <p>Valid till 31 Aug</p>
+                            </div>
+                        </div>
+                        <div class="offer-code">ICICI500</div>
+                    </div>
+                    <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                </div>
+               
+            </li>
+        </ol>
+       
+    </section> -->
+
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <h3>Convenient Booking</h3>
+                <p>Book your tickets easily from the comfort of your home.</p>
+            </div>
+            <div class="feature">
+                <h3>Safe Travel</h3>
+                <p>Experience safe and secure travel with us.</p>
+            </div>
+            <div class="feature">
+                <h3>Customer Support</h3>
+                <p>24/7 customer support to assist you with your journey.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- app-promotion -->
+    <div class="app-promotion">
+        <div class="">
+            <h2 style="color: white; margin: 21px 20px 21px">ENJOY THE APP!</h2>
+            <div class="features">
+                <ul>
+                    <li><span class="tick">&#10003;</span> Quick access</li>
+                    <li><span class="tick">&#10003;</span> Superior live tracking</li>
+                </ul>
+                <div class="ratings">
+                    <div style="padding-right: 20px; text-align: start;">
+                        <p>4.5 &#9733;</p>
+                        <span>50M+ downloads</span>
+                        <p>Play Store</p>
+                    </div>
+                    <hr>
+                    <div style="padding-left: 20px; text-align: start;">
+                        <p>4.6 &#9733;</p>
+                        <span>50M+ downloads</span>
+                        <p>App Store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="download">
+            <p class="scan">Scan to download</p>
+            <img src="./images/qrCode.svg" alt="QR Code" class="qr-code" />
+        </div>
+        <div class="download">
+            <p class="scan">Download the App on</p>
+            <div class="store-buttons">
+                <img src="./images/playStore.svg" alt="Google Play" />
+            </div>
+            <div class="store-buttons">
+                <img src="./images/appStore.svg" alt="App Store" />
+            </div>
+        </div>
+        <div class="image-section">
+        </div>
+    </div>
+
+
+    <footer class="footer" style="padding-top: 20px;">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./images/rdc-redbus-logo.webp" alt="redBus Logo" class="logo">
+                <p>redBus is the world's largest online bus ticket booking service trusted by over 25 million happy
+                    customers globally. redBus offers bus ticket booking through its website, iOS and Android mobile
+                    apps for all major routes.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>About redBus</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Mobile version</a></li>
+                        <li><a href="#">redBus on mobile</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Offers</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Values</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Info</h3>
+                    <ul>
+                        <li><a href="#">T&C</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Bus operator registration</a></li>
+                        <li><a href="#">Agent registration</a></li>
+                        <li><a href="#">Insurance partner</a></li>
+                        <li><a href="#">User agreement</a></li>
+                        <li><a href="#">Primo Bus</a></li>
+                        <li><a href="#">Bus Timetable</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Global Sites</h3>
+                    <ul>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">Singapore</a></li>
+                        <li><a href="#">Malaysia</a></li>
+                        <li><a href="#">Indonesia</a></li>
+                        <li><a href="#">Peru</a></li>
+                        <li><a href="#">Colombia</a></li>
+                        <li><a href="#">Cambodia</a></li>
+                        <li><a href="#">Vietnam</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Partners</h3>
+                    <ul>
+                        <li><a href="#">Goibibo Bus</a></li>
+                        <li><a href="#">Goibibo Hotels</a></li>
+                        <li><a href="#">Makemytrip Hotels</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Redbus India Pvt Ltd. All rights reserved</p>
+            <div class="social-icons">
+                <a href="#"><img src="./images/social_facebook_new.svg" alt="Facebook"></a>
+                <a href="#"><img src="./images/social_linkedin_new.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="./images/social_twitter_new.svg" alt="Twitter"></a>
+                <a href="#"><img src="./images/social_instagram_new.svg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- <footer>
+        <div class="container">
+            <p>&copy; 2024 RedBus Clone. All rights reserved.</p>
+        </div>
+    </footer> -->
+
+
+</body>
+
+</html>
